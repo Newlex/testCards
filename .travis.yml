@@ -15,6 +15,7 @@ matrix:
     - os: osx
       osx_image: xcode9.1
       before_install:
+        - sudo apt-get update --allow-unauthenticated
         - brew tap caskroom/cask
         - brew cask install powershell
   fast_finish: true
